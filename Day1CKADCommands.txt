@@ -24,3 +24,27 @@ ls
 vim busyboxcommand.yaml
 h
 vim .zsh_history
+vim .zsh_history
+cp .zsh_history ~/SAPDevDJAdams/ckad/Day1CKADCommands.txt
+k8
+ls
+vim Day1CKADCommands.txt
+git add .
+git commit -m "Day1CKAD"
+git push
+git push -u origin master
+kubectl create namespace myns --dry-run -o yaml > namespace.yaml
+vim namespace.yaml
+kubectl -h
+kubectle create --help
+kubectle create -h
+kubectl create -h
+kubectl create quota -h
+kubectl create quota myrq --dry-run -o yaml > quota.yaml
+vi quota.yaml
+kubectl create quota myrq --hard=cpu=1,memory=1G,pods=2 --dry-run -o yaml > quota.yaml
+vi quota.yaml
+kubectl get pods --all-namespaces
+kubectl run nginx --image=nginx --restart=Never --port=80 --dry-run -o yaml > nginxport80.yaml
+kubectl run nginx --image=nginx --restart=Never --port=80 
+vi nginxport80.yaml
